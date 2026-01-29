@@ -1,0 +1,6 @@
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1407:22:LL_AHB4_GRP1_EnableClock	24	static
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:2273:22:LL_APB1_GRP1_EnableClock	24	static
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:2403:22:LL_APB1_GRP1_DisableClock	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/i2c.c:30:6:MX_I2C1_Init_CubeMX	8	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/i2c.c:73:6:HAL_I2C_MspInit	440	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/i2c.c:121:6:HAL_I2C_MspDeInit	16	static

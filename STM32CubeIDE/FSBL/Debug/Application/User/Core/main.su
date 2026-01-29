@@ -1,0 +1,7 @@
+../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1165:22:LL_AHB3_GRP1_EnableClock	24	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:135:5:main	48	static,ignoring_inline_asm
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:268:6:SystemClock_Config	224	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:382:15:SystemIsolation_Config	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:444:15:LCD_init	8	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:475:13:Display_WelcomeScreen	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:498:6:Error_Handler	4	static,ignoring_inline_asm

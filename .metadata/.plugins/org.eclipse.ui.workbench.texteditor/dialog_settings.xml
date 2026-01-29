@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="Init"/>
+		<item value="MX_I2C1_Init"/>
+		<item value="init"/>
+		<item value="CMW_CAMERA_VD55G1_Init"/>
+		<item value="CMW_CAMERA_EnableGPIOs();"/>
+		<item value="hcamera_dcmipp"/>
+	</list>
+</section>

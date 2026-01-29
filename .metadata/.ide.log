@@ -1,0 +1,19 @@
+2026-01-27 09:08:48,771 [INFO] Activator:176 - 
+
+
+2026-01-27 09:08:48,775 [INFO] Activator:177 - !SESSION log4j initialized
+2026-01-27 09:08:52,391 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-01-27 11:06:27,905 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-01-27 15:16:36,865 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-01-27 15:16:38,868 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-01-27 16:33:27,630 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-01-27 21:28:35,256 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:35,380 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:35,516 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:35,641 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:35,776 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:36,882 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:37,006 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:37,164 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:37,287 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-27 21:28:37,418 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake

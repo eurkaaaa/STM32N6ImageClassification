@@ -1,0 +1,849 @@
+21:15:30 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_imx335.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_imx335.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_imx335.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_imx335.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_vd55g1.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_vd55g1.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_vd55g1.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_vd55g1.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_vd66gy.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_vd66gy.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_vd66gy.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_vd66gy.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/cmw_camera.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/cmw_camera.d" -MT"Middlewares/Camera_Middleware/cmw_camera.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/cmw_camera.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/cmw_utils.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/cmw_utils.d" -MT"Middlewares/Camera_Middleware/cmw_utils.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/cmw_utils.o"
+arm-none-eabi-gcc "../Drivers/STM32N6570-DK/stm32n6570_discovery_bus.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.d" -MT"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o"
+arm-none-eabi-gcc "../Application/User/Core/app_camerapipeline.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/app_camerapipeline.d" -MT"Application/User/Core/app_camerapipeline.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/app_camerapipeline.o"
+arm-none-eabi-gcc "D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/main.o"
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: In function 'main':
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:39: warning: passing argument 1 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       uint32_t ** {aka long unsigned int **}
+In file included from D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:36:
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:36: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                          ~~~~~~~~~~^~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:97: warning: passing argument 2 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                 |
+      |                                                                                                 uint32_t ** {aka long unsigned int **}
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:60: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                                                  ~~~~~~~~~~^~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: At top level:
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:475:13: warning: 'Display_WelcomeScreen' defined but not used [-Wunused-function]
+  475 | static void Display_WelcomeScreen(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:444:15: warning: 'LCD_init' defined but not used [-Wunused-function]
+  444 |   static void LCD_init(void)
+      |               ^~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:111:12: warning: 'lcd_fg_buffer_rd_idx' defined but not used [-Wunused-variable]
+  111 | static int lcd_fg_buffer_rd_idx;
+      |            ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
+   text	   data	    bss	    dec	    hex	filename
+ 236792	    400	   9928	 247120	  3c550	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x3418348d
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x186129c
+    Header version: 0x20300
+    Size: 0x39ea0
+    Load address: 0xffffffff
+    Entry point: 0x3418348d
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: 77 78 b4 2b 98 c6 fe 82 c5 b9 44 aa 09 a6 90 92 51 18 f5 0b 3a 12 72 3f ee 64 7d 88 6a a1 54 
+
+                    4b 98 90 17 0c ed 82 c1 be 9e f7 d7 b4 18 0a 09 7d 35 65 a4 eb 7c e9 16 be 96 e0 28 15 12 32 
+
+                    19 76 39 0a 08 d6 67 d4 83 50 70 c2 a3 45 e0 90 9b dc 16 d2 a9 0b 93 89 ac c7 86 5e 10 97 9b 
+
+                    9b f1 13 fd 51 7a 22 e1 90 36 41 3a 1b 98 a1 95 03 ec a7 1a 7d b4 ad 0c 83 ba 6d b1 6e 43 ec 
+
+                    ce bc 38 4c de 83 d8 4c 2d 0d 4e 30 9e 4c 7d a1 88 a7 6c db 0b 04 67 00 39 df c4 a9 fc 71 0e 
+
+                    9f c8 a7 f2 aa 14 b7 b6 5b b5 da ec d2 5a 74 c1 7f dc 32 3a c1 50 ae 38 31 d9 ef c4 77 0e 64 
+
+                    9c a5 30 9a 97 a6 1e a6 72 0a 53 0c 3a e9 c8 0d 66 6e 9c 3b 27 48 9e ba 58 17 b0 09 4c df f9 
+
+                    d5 ec 4e a1 e1 00 d5 66 8f 60 d3 6c da af 49 0f 5d f9 d6 c8 72 26 9d 51 6f ad 6a 2c b9 dc f3 
+
+                    f4 14 f7 b8 ec a8 7b 26 a4 a4 ed f1 52 c8 9f 73 e2 a2 d7 f1 42 89 54 77 8c 3d 73 97 f7 26 64 
+
+                    84 c1 5a c8 94 7f 50 e5 85 96 81 f2 84 5f 09 db a5 a9 58 f4 92 d1 a5 b4 9f 43 c8 5d d1 fd 0d 
+
+                    d6 68 7e 47 b4 bd 56 ea 0d d6 c8 07 40 7f 26 22 70 62 d1 11 b0 98 20 34 58 5b 6b 10 2f 1c 8a 
+
+                    3d 27 a6 f2 86 bf 0d c5 f0 86 bc e6 e8 e0 3c a3 b2 7b c4 bf 4b e9 b3 d1 a6 98 d4 6e 12 e6 4a 
+
+                    ae 8e a0 73 63 f7 94 b2 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:16:04 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 236792	    400	   9928	 247120	  3c550	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x3418348d
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x186129c
+    Header version: 0x20300
+    Size: 0x39ea0
+    Load address: 0xffffffff
+    Entry point: 0x3418348d
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: d6 4b 3a 26 c9 7e 76 9f 00 c2 54 9c ba 14 e3 be a9 96 c7 d0 50 21 d7 2d 1e 94 3d f3 78 36 02 
+
+                    fc ff d0 81 9a 29 85 4f 2f 81 8a 47 97 95 06 a5 4b 91 46 8c 02 50 36 b6 a4 fb c5 9b 51 6c f3 
+
+                    bb 17 61 ad 3b 5a 85 ef 24 74 46 6b d6 1c 83 2e a5 c8 be ac c8 fc 0d ee 72 dd d4 c4 30 d6 0c 
+
+                    21 cc 49 0b 3a df e1 fb 10 19 0a 5b 0d d7 8d ef e5 9f e1 57 6f 7c 63 65 d4 e7 3a ea 7f 9b 6f 
+
+                    a2 9d 10 3a 03 c5 48 6d 55 d4 27 f9 42 8c ae a8 d4 cd 64 fc 4c b2 17 a1 cf 73 86 06 45 c0 6e 
+
+                    bf 97 7f 8f c0 2c ad 99 7b b8 5d 7c a7 46 f6 3c 98 1f 25 5d 88 6a fc 14 f0 8c b9 b1 8a 4b 1d 
+
+                    88 a4 fc db b6 01 59 42 9e 71 39 20 87 71 b4 ae 01 37 ee 00 be 49 95 20 44 35 11 69 52 21 98 
+
+                    97 ad 08 87 10 08 fd de 58 bd f5 25 95 42 cc 0b 6f 90 79 d9 73 81 ea 58 03 6b 94 a1 cd 3d 68 
+
+                    63 d7 48 60 0a 8a 1d 78 eb f4 4b c3 d6 f3 9b df 90 f5 4e 29 5c 9e b4 97 e8 8c c3 a0 59 fb d6 
+
+                    7b cb da 0f f6 3a f7 1a ce c4 2d e1 ab c5 14 9d 15 3f 65 f4 34 93 10 fb 90 6e 69 42 59 34 b3 
+
+                    2a 5e a3 78 13 a7 6f ed 81 71 6d b2 a6 d8 88 16 90 7a d2 e9 9d 5f c9 02 78 b5 b6 f7 a3 0d 4e 
+
+                    64 27 20 b0 26 7c b7 47 45 08 e8 51 29 45 b6 cd 6c a5 3d 8d 54 af f1 c2 1e 54 c2 a9 3e ab 6e 
+
+                    da 7f b9 5e 28 8d 44 98 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:16:47 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 236792	    400	   9928	 247120	  3c550	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x3418348d
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x186129c
+    Header version: 0x20300
+    Size: 0x39ea0
+    Load address: 0xffffffff
+    Entry point: 0x3418348d
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: 43 4a b3 56 9c c5 d4 48 ba d0 dc 8a 23 04 86 4d d1 01 fc f9 61 0a 7d 23 5f 51 20 09 38 f9 a9 
+
+                    ae ba 33 3c 77 37 f6 6f 23 db ac 43 6b c4 1e 4a 06 36 3a ad 9c 39 db 90 39 dd 52 0f d8 a6 a4 
+
+                    b7 d3 46 17 5e 0a 1c c9 bf 1e 5e fe f3 f5 d4 83 07 43 af 58 a1 60 5b 33 98 b6 f8 fc cc 63 74 
+
+                    ef 6b 89 00 7d 81 1e 06 9f 83 95 78 6a d5 0b ec 3a fa 1a f0 b6 76 f1 cb 9c e4 86 37 fe 75 a7 
+
+                    a0 7c 2f a4 f4 eb 01 f9 76 9e 15 a2 ba 11 63 bb fe ed 73 97 8c 30 b0 90 d9 15 8d f7 d6 2c 02 
+
+                    14 f0 9f f6 56 d3 0c 50 d5 ec b5 eb 10 50 9d e8 aa f0 eb 22 8f d7 45 a7 2b 4a 80 14 cd 88 7f 
+
+                    7d 89 66 f0 4e 28 61 84 36 70 2d 4c b4 68 aa 88 8d c6 fd 38 ff 75 ca 1f 83 cb a0 cb 36 f2 ad 
+
+                    35 0f ff 37 ae 6f 24 85 7f 08 55 7d b3 e7 02 51 21 db ad 4c 54 a2 17 63 fd 66 bc bf 54 5f 63 
+
+                    fb b4 24 03 bc 23 c5 1a 60 50 c3 78 e9 b1 6c 57 44 80 7f 0c 98 71 9d 77 93 f4 54 a5 47 27 44 
+
+                    93 af 26 62 78 35 17 fa c9 28 bc fc b1 89 56 51 43 70 b8 75 17 0b 58 ff f4 8d 2b b2 ab e8 29 
+
+                    0d 89 23 b2 53 e9 67 29 6f 06 9f 58 bc 04 fa 4a 83 7c 62 4d 38 18 69 22 2d 01 f3 30 8a f4 5f 
+
+                    26 50 9e e9 e4 30 b6 b4 9e 3b 55 be a2 69 23 79 86 88 03 3f 65 81 09 ed 0b 5a d1 2e 25 e6 54 
+
+                    da 3b 0e 80 d6 af 96 b7 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:17:48 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 236792	    400	   9928	 247120	  3c550	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x3418348d
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x186129c
+    Header version: 0x20300
+    Size: 0x39ea0
+    Load address: 0xffffffff
+    Entry point: 0x3418348d
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: d7 25 64 97 48 5a 73 55 56 41 9f 43 1b 59 26 1c d8 fe 61 0d 04 c1 19 97 f3 a3 74 03 56 66 85 
+
+                    5c 45 3e f9 78 8f b5 6f 7e 2b 4b 53 a3 bf d9 3d 52 c1 e9 e7 bc 9c 90 73 1a 60 39 14 da 71 d3 
+
+                    4b 3d 20 f6 3d 2c 13 06 72 ea 78 52 44 f3 a1 f0 28 93 bb ff 41 e3 6d 0c df 11 9f ef 3f ef 26 
+
+                    b8 21 58 6d d4 a5 c3 e3 a6 ae 54 6b dc f2 bc 1f f3 11 55 b9 72 b6 82 07 a8 97 2f d1 71 c9 9e 
+
+                    49 f4 c7 01 7b cb 30 27 de 99 1a 4c 47 27 b3 f8 65 c4 10 be 7a 4a ea 20 35 93 9d 5a 96 ce dc 
+
+                    79 08 e6 78 ff c8 2d 3f 62 6d fe 8e 5c 9b 12 fa b9 8b 87 42 18 1e 99 79 25 22 05 34 dd 2a 4d 
+
+                    c2 f3 1f c0 be b2 50 7b 40 78 61 b2 8e b6 a9 43 eb 38 02 3a 42 d6 76 59 54 6c 9c 4d eb 22 eb 
+
+                    8b 22 74 7a d1 c0 ee 87 07 47 3d 02 8e 0c 02 be 09 30 99 cf 54 0b aa d7 a0 1a 88 11 4e 27 b5 
+
+                    f7 3a b0 b5 86 29 37 d7 48 2a a2 ff 71 aa 1e c9 94 f4 39 b0 a9 e2 87 93 e3 8d b3 df 8a e3 3c 
+
+                    26 d7 02 c6 ad d9 93 7f 60 c5 86 ac e0 49 d9 75 ae de 20 54 c4 6a fc 96 fe 37 41 58 96 b6 62 
+
+                    48 ec b0 49 05 14 15 19 e7 d2 b6 66 01 09 63 66 25 2d 43 f5 6f ff f7 f2 d7 93 65 f3 9c 7b f6 
+
+                    2e 40 79 d3 7d 1c 31 ec e6 63 35 bb d6 4b 66 1f 01 86 b9 49 b2 bc df bf 70 b7 70 e9 1b b9 de 
+
+                    e3 f2 75 d6 27 89 2e a0 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:22:35 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_imx335.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_imx335.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_imx335.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_imx335.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_vd55g1.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_vd55g1.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_vd55g1.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_vd55g1.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/sensors/cmw_vd66gy.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/sensors/cmw_vd66gy.d" -MT"Middlewares/Camera_Middleware/sensors/cmw_vd66gy.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/sensors/cmw_vd66gy.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/cmw_camera.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/cmw_camera.d" -MT"Middlewares/Camera_Middleware/cmw_camera.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/cmw_camera.o"
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/cmw_utils.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/cmw_utils.d" -MT"Middlewares/Camera_Middleware/cmw_utils.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/cmw_utils.o"
+arm-none-eabi-gcc "../Drivers/STM32N6570-DK/stm32n6570_discovery_bus.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.d" -MT"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o"
+arm-none-eabi-gcc "../Application/User/Core/app_camerapipeline.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/app_camerapipeline.d" -MT"Application/User/Core/app_camerapipeline.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/app_camerapipeline.o"
+arm-none-eabi-gcc "D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/i2c.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/i2c.d" -MT"Application/User/Core/i2c.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/i2c.o"
+arm-none-eabi-gcc "D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/main.o"
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: In function 'main':
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:39: warning: passing argument 1 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       uint32_t ** {aka long unsigned int **}
+In file included from D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:36:
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:36: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                          ~~~~~~~~~~^~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:97: warning: passing argument 2 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                 |
+      |                                                                                                 uint32_t ** {aka long unsigned int **}
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:60: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                                                  ~~~~~~~~~~^~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: At top level:
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:475:13: warning: 'Display_WelcomeScreen' defined but not used [-Wunused-function]
+  475 | static void Display_WelcomeScreen(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:444:15: warning: 'LCD_init' defined but not used [-Wunused-function]
+  444 |   static void LCD_init(void)
+      |               ^~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:111:12: warning: 'lcd_fg_buffer_rd_idx' defined but not used [-Wunused-variable]
+  111 | static int lcd_fg_buffer_rd_idx;
+      |            ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
+   text	   data	    bss	    dec	    hex	filename
+ 236896	    400	   9928	 247224	  3c5b8	STM32N6DK2_FSBL.elf
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x34183475
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x18653db
+    Header version: 0x20300
+    Size: 0x39f00
+    Load address: 0xffffffff
+    Entry point: 0x34183475
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: 6d 15 34 7e 0b f8 68 37 8c 8d 24 07 e6 7e 06 b3 13 c1 98 e5 44 cb 1f b2 54 67 9a cb 12 7d cd 
+
+                    fc be b0 3d fc 22 22 b4 1b c6 de 0a e2 74 38 b9 a9 7a e2 8d 72 41 dd b7 eb 0d 04 24 4f 6d 98 
+
+                    a0 d8 fe 90 db a6 bc bd c6 3e 97 b9 24 14 0d 5f 06 40 60 47 a7 d9 3a 9a 25 e2 a1 39 9a 63 c2 
+
+                    7e d5 33 4c 96 e6 46 9e 34 10 b0 e7 d2 a6 9b db 59 0d 7f 73 79 95 45 9c 49 7d 77 7d 6d de b2 
+
+                    bf 6f 96 e5 d2 c7 86 19 36 cc 2b 84 bb 8c ab 3e c8 ef 28 e5 10 02 d6 1d 4f b5 b2 d7 d5 02 85 
+
+                    75 f2 f5 aa 26 a2 5b fa 28 91 d9 18 f0 00 14 ae 24 15 91 52 f9 e2 ac a3 78 24 37 d5 d4 21 8e 
+
+                    04 7f 69 29 fa 62 5b 3e b8 85 79 ff 4b 27 f4 75 0e a9 d0 d9 b0 30 7b 10 f7 1f 21 01 5a 2d 65 
+
+                    e3 5c 2a 65 72 b9 4b bb 03 c7 9e 43 49 f5 d9 d8 16 3c b7 fb 1b 9c 9e 42 9e 48 15 dd 77 e7 ff 
+
+                    25 3d 14 b7 a7 d7 d6 70 5b 2c 3b 15 4a 7a 0a d4 38 ef 48 df 81 a2 6b f3 22 16 de e0 65 bb 25 
+
+                    88 15 11 48 ef 7b 5e 86 e5 45 09 ac 68 08 8b a6 cb 29 a9 a5 90 45 f5 8b 0b 95 09 05 e4 3e e5 
+
+                    db 28 33 3a f7 80 8c 51 64 30 81 d7 08 46 70 e1 23 0f 9e af 9d d4 fd 70 d5 82 02 b4 95 33 43 
+
+                    a4 97 d9 14 2f 3e ba ee df 5e 81 eb 5d 95 94 ee 1f ae a9 d4 c9 a0 be f7 d4 85 c5 26 c6 83 1d 
+
+                    30 de e8 cf 9d d5 70 8b 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:23:17 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-gcc "D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/main.o"
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: In function 'main':
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:39: warning: passing argument 1 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       uint32_t ** {aka long unsigned int **}
+In file included from D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:36:
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:36: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                          ~~~~~~~~~~^~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:226:97: warning: passing argument 2 of 'CameraPipeline_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  226 |   CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+      |                                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                 |
+      |                                                                                                 uint32_t ** {aka long unsigned int **}
+../../../FSBL/Core/Inc/app_camerapipeline.h:24:60: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t **' {aka 'long unsigned int **'}
+   24 | void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32_t *pitch_nn);
+      |                                                  ~~~~~~~~~~^~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c: At top level:
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:475:13: warning: 'Display_WelcomeScreen' defined but not used [-Wunused-function]
+  475 | static void Display_WelcomeScreen(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:444:15: warning: 'LCD_init' defined but not used [-Wunused-function]
+  444 |   static void LCD_init(void)
+      |               ^~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:111:12: warning: 'lcd_fg_buffer_rd_idx' defined but not used [-Wunused-variable]
+  111 | static int lcd_fg_buffer_rd_idx;
+      |            ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
+   text	   data	    bss	    dec	    hex	filename
+ 236768	    400	   9928	 247096	  3c538	STM32N6DK2_FSBL.elf
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x341833f1
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x186532c
+    Header version: 0x20300
+    Size: 0x39e80
+    Load address: 0xffffffff
+    Entry point: 0x341833f1
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: ea 10 85 39 67 1f da c8 42 a8 ce 00 ca b3 87 f4 85 a2 c0 55 22 16 05 13 a5 45 06 b3 f1 6f 0d 
+
+                    b6 8d 5a 9e 63 17 35 5a ae 8c 4a de e3 72 53 ea 0f e6 23 83 a0 9d 97 0b d3 09 3b 2d 86 c7 61 
+
+                    dc 8f 14 49 08 52 e8 14 e6 ac 34 22 2e b1 de cc d6 55 e8 de c2 40 d3 6d 36 40 43 c7 7a 65 8a 
+
+                    46 9f 49 a1 a5 1c b0 a9 f2 2d b1 11 a8 1c f2 48 e8 fa 1d 97 dd 32 a9 05 02 6f 1f b5 55 35 65 
+
+                    81 f9 8f 7a 93 70 9e 8f 4e ca a4 bb 6c 34 13 a1 c5 a7 5a b0 d6 3e 7f 15 2f 63 28 86 28 93 76 
+
+                    d9 88 d5 18 df a9 6a 84 5e fa 5f 83 9f c7 fd 78 6a b7 b4 75 45 1d 21 fb 52 1d 58 e2 dc 84 d0 
+
+                    78 6b 45 76 db 25 ea 22 a1 41 20 dd f6 1a b1 34 13 58 1e 3b 67 6b fb 98 a5 fd 7e 9f 38 4a 6a 
+
+                    39 15 57 90 a2 d0 79 fd e0 df 06 35 00 f4 c0 31 f3 97 56 e2 c3 29 b3 32 91 08 c7 25 48 89 90 
+
+                    53 fd b3 a3 24 30 f7 f5 c9 ef 97 f9 d6 28 28 ea 43 b5 1c e3 a8 3c 93 1f 2a 8b c9 38 f3 8c fd 
+
+                    61 45 f9 4a f0 c4 9e ec b0 96 b8 a0 ec 85 2f a1 60 49 26 20 08 77 de 04 99 be 9e aa 3a 9c af 
+
+                    1e f8 f4 bc 79 23 6b 27 63 f3 8b 1e 20 f5 37 d3 ed 0a ae 98 8b 4b f5 5e 39 ec 12 53 32 ce 82 
+
+                    f9 d2 18 a8 02 0e d5 ac 33 d7 4d 67 21 b6 2e 07 6f 83 36 fe 2d 99 24 95 a3 36 cc 40 c3 8c 30 
+
+                    0c 65 fa 08 74 46 77 40 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:25:56 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32N6570-DK/stm32n6570_discovery_bus.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.d" -MT"Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32N6570-DK/stm32n6570_discovery_bus.o"
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
+   text	   data	    bss	    dec	    hex	filename
+ 236768	    400	   9928	 247096	  3c538	STM32N6DK2_FSBL.elf
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x341833f1
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x1864d86
+    Header version: 0x20300
+    Size: 0x39e80
+    Load address: 0xffffffff
+    Entry point: 0x341833f1
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: 1e e7 ae 72 16 1a 0f 6b 73 a6 ae 5e 27 14 1b 12 31 f2 1d 31 44 43 08 62 25 04 32 cc 8f 04 b1 
+
+                    16 40 51 89 60 5b 13 e8 b7 8e a9 09 85 b1 85 36 2d e8 55 44 90 40 e5 ba 0a 50 44 f9 12 d4 8d 
+
+                    0e 6e 16 53 43 36 08 ed e6 f8 dd 35 9f 1e 53 8b 46 40 e3 9e df ab 47 bd 77 3e 29 04 9f 73 f7 
+
+                    cb 70 00 ad 17 48 32 67 9c 45 72 12 a6 55 b6 3a 29 68 af 8a 95 2e 96 79 a2 09 2f 6b 77 87 c7 
+
+                    f8 d5 b6 a6 d3 6a 5a b2 9f 3e 5d b3 94 21 9d 61 79 ff 39 f7 c6 ef d8 7c 94 7d 1a 02 79 6a 7a 
+
+                    57 6a 8c 33 2b a7 9e b0 e5 52 7f 35 56 d2 20 13 4d 96 d2 37 d7 c4 2a b8 fe 51 26 39 92 75 a5 
+
+                    7e 25 50 3d fb 57 5a ff fe cc 88 ff f2 87 57 dd 2f b8 99 d5 92 66 4b f1 1b 79 90 eb 01 bb 3a 
+
+                    bc 76 11 e7 97 29 ce 7b 3d e9 2d 85 73 7b d4 08 8f df 03 d7 ce 86 10 25 27 a1 68 29 0d 81 ff 
+
+                    c6 0d 0e 85 7d 98 b5 7e ad 80 18 ae 92 f5 99 03 2b 95 22 57 d6 3f 18 76 91 63 75 47 01 83 95 
+
+                    a8 6f 51 76 95 1b 1a 72 8a e7 b6 56 44 3b c7 5f 69 57 01 5e d1 91 94 3f 52 37 85 d1 a1 41 ce 
+
+                    73 d4 bf c7 82 aa e9 8b 38 75 6c 1b ca 04 97 30 4e 4b f6 2d fb 04 b0 b7 43 c1 8d ee e8 ca c9 
+
+                    d0 66 78 be b5 89 75 2a ff 29 cb ea f9 cc c0 9d 69 2d c3 b9 e0 55 15 7e e4 70 83 7b 91 a2 9e 
+
+                    77 0f 55 31 aa f9 65 d3 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:28:05 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 236768	    400	   9928	 247096	  3c538	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x341833f1
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x1864d86
+    Header version: 0x20300
+    Size: 0x39e80
+    Load address: 0xffffffff
+    Entry point: 0x341833f1
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: c5 6e 5e 3f ac 23 4e 35 13 95 06 73 80 09 90 bb d0 10 d7 b9 78 da ef 56 c5 d7 37 7f e6 03 26 
+
+                    4f 19 f8 76 af e3 fc 87 40 ab da 31 bb bd 9a ab 13 5f b9 ae ba ea 39 e0 6d 95 6b 0e b9 77 0b 
+
+                    50 1c 35 5f 43 30 ab 60 54 c4 7f 23 4a 88 05 50 7c 4f 9f e1 de 0f 72 63 6d 20 87 0b 36 3d ee 
+
+                    4a 2c 1e 45 bd fc 05 09 e3 a9 b0 b4 6e 86 c4 fc 10 0d f8 13 e1 67 86 ea 3c 77 51 eb 57 24 e9 
+
+                    92 ef 26 73 57 b9 d4 61 ea 36 fb 08 c5 3a eb 20 7f f4 42 60 02 a5 60 fc ce 71 53 95 7a 7d b1 
+
+                    81 7c 0f e6 65 ba 5e ff ae 78 84 e5 73 b2 5a 96 60 fd 91 bb a1 b2 b7 5b d4 10 dc f1 2a df b0 
+
+                    38 ba b3 76 93 66 c0 b2 69 7c b7 45 50 5c 84 ed 9a 71 2f e2 be cb 99 c6 75 e8 dc aa ee 19 82 
+
+                    60 7c 2f b0 06 36 2a 1f d3 42 62 0e 20 10 c5 a6 87 a2 34 6c a2 f9 eb 89 a0 f6 97 70 b3 84 ce 
+
+                    ad d6 d8 e9 c5 dd 87 ee 80 9c 49 e4 e9 79 16 cd 08 1b 5a fd f0 bd 87 a5 eb dd 38 1c a1 f4 6d 
+
+                    5a 51 2f a9 fb 6f 44 71 e6 a6 95 2c 12 90 cd 86 0c 8c 3a 24 59 51 99 90 6b d3 09 00 4f 44 48 
+
+                    ce 56 e5 9a 5d 1f 4b d1 97 86 83 62 23 b0 15 8b 46 66 b7 f0 45 cd 3c eb dc d1 3d 6e 0b a8 50 
+
+                    f3 ab 0f 00 c3 fa ab f0 ff 44 45 15 09 2f f2 2c 2c e0 13 b9 31 02 d2 94 99 20 75 f1 dc 1c d0 
+
+                    5e 8b ca 26 8b f5 ad e5 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:28:29 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Camera_Middleware/cmw_camera.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Middlewares/Camera_Middleware/cmw_camera.d" -MT"Middlewares/Camera_Middleware/cmw_camera.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Camera_Middleware/cmw_camera.o"
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
+   text	   data	    bss	    dec	    hex	filename
+ 236928	    400	   9928	 247256	  3c5d8	STM32N6DK2_FSBL.elf
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x341833f1
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x1868b16
+    Header version: 0x20300
+    Size: 0x39f20
+    Load address: 0xffffffff
+    Entry point: 0x341833f1
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: e0 27 d0 d4 95 72 6b 67 ed 29 2b 33 42 21 ff bd 19 2a 66 93 fb 26 09 32 8a d0 67 1f e3 16 8b 
+
+                    46 9a 2b 93 ca cc b9 87 7c 87 76 af 00 2a 30 5d 88 c6 10 db 68 91 59 97 46 a7 a9 98 3c 3f a0 
+
+                    31 f8 c9 fb 7c 76 44 40 c9 b7 74 ee 2d 2b bf 09 40 1b 2a 5a 86 32 c4 91 a6 50 a4 21 3f 5b 8d 
+
+                    51 c2 11 4d 54 3d 72 08 bf 52 93 cc 76 9f 67 79 fa 6b c9 b7 e7 5c e6 e8 5c 70 b0 4d 9a 49 bd 
+
+                    f5 54 58 e2 6e f1 67 d3 12 d9 5e d7 6e 1e 64 3f 47 71 8d af 7a 9b 13 12 d0 13 e8 65 b9 34 f4 
+
+                    9f 0e 68 1f 41 4b 54 ca e0 c4 c3 1c 08 2f a0 b5 ae 08 6e 47 e0 52 c4 f1 b6 98 fa 23 b4 c4 c2 
+
+                    76 d0 ba 43 ce 10 5c 94 4f de ae 2b ff cc a6 ef 45 af bb c5 2d c7 a1 cc 65 5e 36 b5 2a 26 76 
+
+                    9c d2 a4 a1 ac d0 ff 52 eb 8b 01 57 b9 a5 9a f0 9d 14 17 47 96 d3 a6 1f 1f 26 cf cd a0 78 50 
+
+                    2a 16 f9 36 81 41 2e a4 cd bc 63 ae 91 7c 53 58 c7 12 b8 6f f1 95 13 82 0f e0 2b f6 ae 31 f8 
+
+                    50 ee 3e 15 2a 97 a7 66 f6 9f 8c 4d c1 09 83 6d 2c 2d 42 d5 9d 8e 25 ac 97 6c 8c c4 73 75 7b 
+
+                    a5 62 9b 11 03 64 be 99 6b 63 5a 7f 7b 4b d6 30 1e 08 5f 29 ca b0 0a b4 b0 00 41 a6 d2 90 36 
+
+                    27 07 01 82 76 b6 ef 4c 39 2a b5 8f f3 bd 91 5a 6c e3 ed 19 eb f1 2f 01 d5 cd d5 b3 20 59 a1 
+
+                    62 7b 8f 1c f1 72 3f c3 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 
+21:41:16 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 236928	    400	   9928	 247256	  3c5d8	STM32N6DK2_FSBL.elf
+Finished building: default.size.stdout
+ 
+cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
+echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
+      -------------------------------------------------------------------
+                          STM32 Signing Tool v2.21.0                   
+      -------------------------------------------------------------------
+
+Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
+[Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
+Header version 2.3 preparation... 
+Extracting Entry point value from the input file...
+Entry point value : 0x341833f1
+The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
+
+Header description:
+
+    Magic: 0x53544d32
+    Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+               00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Checksum: 0x1868b16
+    Header version: 0x20300
+    Size: 0x39f20
+    Load address: 0xffffffff
+    Entry point: 0x341833f1
+    Image version: 0x0
+    Extension: 0x80000000
+
+Pad header detected:
+    Type: 0x5354ffff
+    Size: 0x1a0
+    Padding values: 6c 0f 38 41 48 39 eb 79 32 a4 28 d0 53 07 b5 f8 cf ba ef f7 f5 94 61 d8 92 28 a8 dc bb 5a 15 
+
+                    e9 4a 93 b7 bf 11 e2 8d 7e 6f 8c 7e ad 49 7c d6 9e 9a e4 e9 de 08 99 35 d1 64 74 69 e6 62 88 
+
+                    f1 7f 43 88 55 d0 a4 0e 79 52 ca 3b 55 66 47 f3 b9 e4 4a db ec c0 86 66 f1 ca 2f 7d 6c 97 37 
+
+                    8a cd 3a ce 0e 06 e8 09 f3 f0 3d a7 17 72 6a d6 85 93 79 21 83 04 13 a0 6a cd 86 12 27 51 21 
+
+                    30 00 2e c9 42 19 7f c1 d7 1c 5d 6e 47 7e 90 ac 7c e0 8f 1f 91 ae f7 5f 2c 34 8a 3d 20 ca f2 
+
+                    d4 f4 a9 d3 19 52 63 27 9b ad 90 d4 ba e9 d4 2e b8 a7 81 59 af 31 ed 16 f8 bf bf 09 98 0a 1e 
+
+                    e5 56 81 ab 6f 98 88 cb 3f 14 e9 c0 9d 9c 13 60 d1 6d c9 46 30 7c 56 81 1d 5d d7 25 58 84 05 
+
+                    3d 69 db c6 b6 82 ac f4 d8 6b 7c 13 c1 8a e0 02 70 cc 2a a9 f2 0a fe 0c fa 8d 4d 85 33 de f6 
+
+                    ba 38 92 2a 2b 95 1e 87 f2 de 6e f9 5f b0 1b 81 0c 0e 86 21 af 3d 6e 58 0b a6 49 ac 17 16 9d 
+
+                    02 8b b3 0e af f8 f2 3f a1 f8 8d fb 31 9f fd a8 e8 ae b1 4f 6b cf 3d 9a e3 33 f9 13 ec 89 b0 
+
+                    0f be 63 c6 82 44 6f 96 7f 8a 1a 30 f7 52 e6 59 dc 1c 34 b4 f2 07 1c 92 75 6e 1a 73 40 1c b5 
+
+                    95 b6 76 67 c3 bf 66 1f 91 c8 55 0a ea 53 95 e2 7c ed 2a 1d f1 31 05 b4 16 1d 13 80 b7 92 cd 
+
+                    58 25 cf 8e 8e 36 f1 c9 
+
+Post header 2.3 information :
+    Binary type: 0x10
+    Non authenticated payload length: 0x0
+    Non authenticated payload hash: 0x0
+
+
+ 

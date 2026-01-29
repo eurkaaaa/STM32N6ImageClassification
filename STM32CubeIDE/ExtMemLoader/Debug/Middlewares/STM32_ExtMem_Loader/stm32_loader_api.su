@@ -1,0 +1,8 @@
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:187:43:Reset_Handler	0	static,ignoring_inline_asm
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:221:5:main	8	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:276:10:Init	24	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:323:28:Write	24	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:351:28:MassErase	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:378:28:SectorErase	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:413:28:Verify	80	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c:464:17:CheckSum	48	static
