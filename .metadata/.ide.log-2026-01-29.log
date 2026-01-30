@@ -1,0 +1,11 @@
+2026-01-29 12:16:20,362 [INFO] Activator:176 - 
+
+
+2026-01-29 12:16:20,368 [INFO] Activator:177 - !SESSION log4j initialized
+2026-01-29 12:16:27,756 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-01-29 12:17:40,566 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-29 12:17:40,701 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-29 12:17:40,822 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-29 12:17:40,957 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-29 12:17:41,086 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-29 23:54:05,185 [ERROR] AdobePublisher:187 - Exception while getting the server answer: java.net.SocketTimeoutException: Read timed out

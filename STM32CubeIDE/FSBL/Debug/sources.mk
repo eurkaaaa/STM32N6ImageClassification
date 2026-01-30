@@ -30,6 +30,7 @@ Drivers/STM32N6570-DK \
 Drivers/STM32N6xx_HAL_Driver \
 Drivers/aps256xx \
 Drivers/mx66uw1g45g \
+Middlewares/Camera_Middleware/ISP_Library/isp/Inc \
 Middlewares/Camera_Middleware/ISP_Library/isp/Src \
 Middlewares/Camera_Middleware \
 Middlewares/Camera_Middleware/sensors \

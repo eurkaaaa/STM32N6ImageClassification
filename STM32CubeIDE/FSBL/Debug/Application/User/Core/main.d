@@ -102,7 +102,8 @@ Application/User/Core/main.o: \
  C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/complex_math_functions.h \
  C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h \
  C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/support_functions.h \
- C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h
+ C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h \
+ ../../../FSBL/Core/Inc/dolphin_156x129_565.h
 ../../../FSBL/Core/Inc/main.h:
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal.h:
 ../../../FSBL/Core/Inc/stm32n6xx_hal_conf.h:
@@ -212,3 +213,4 @@ C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/In
 C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/filtering_functions.h:
 C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/support_functions.h:
 C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include/dsp/quaternion_math_functions.h:
+../../../FSBL/Core/Inc/dolphin_156x129_565.h:

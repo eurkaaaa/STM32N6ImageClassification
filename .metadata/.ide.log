@@ -1,19 +1,39 @@
-2026-01-27 09:08:48,771 [INFO] Activator:176 - 
+2026-01-30 16:41:33,625 [INFO] Activator:176 - 
 
 
-2026-01-27 09:08:48,775 [INFO] Activator:177 - !SESSION log4j initialized
-2026-01-27 09:08:52,391 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
-2026-01-27 11:06:27,905 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
-2026-01-27 15:16:36,865 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
-2026-01-27 15:16:38,868 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
-2026-01-27 16:33:27,630 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
-2026-01-27 21:28:35,256 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:35,380 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:35,516 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:35,641 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:35,776 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:36,882 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:37,006 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:37,164 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:37,287 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
-2026-01-27 21:28:37,418 [ERROR] AdobePublisher:162 - Exception while opening the connection: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+2026-01-30 16:41:33,634 [INFO] Activator:177 - !SESSION log4j initialized
+2026-01-30 16:41:40,381 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-01-30 16:41:40,848 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:41:40,850 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:41:40,852 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,026 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,027 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,038 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,865 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,877 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:18,878 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,352 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,364 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,365 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,507 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,519 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:42:49,531 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,369 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,370 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,371 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,508 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,520 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:46:03,521 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:03,716 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:03,717 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:03,718 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:04,048 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:04,049 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:57:04,051 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,121 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,122 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,123 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,300 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,301 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 16:58:53,303 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
+2026-01-30 20:57:19,663 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out

@@ -42,6 +42,7 @@
 #include "stm32_lcd_ex.h"
 #include "stlogo.h"
 #include "crop_img.h"
+#include "dolphin_156x129_565.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -121,6 +122,7 @@ static void SystemIsolation_Config(void);
 /* USER CODE BEGIN PFP */
 static void LCD_init(void);
 static void Display_WelcomeScreen(void);
+static void Security_Config(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -166,8 +168,8 @@ int main(void)
   MX_BSEC_Init();
   MX_CACHEAXI_Init();
   MX_DCMIPP_Init();
-//  MX_I2C1_Init_CubeMX();
-  MX_LTDC_Init_CubeMX();
+//  MX_I2C1_Init();
+//  MX_LTDC_Init_CubeMX();
   MX_XSPI1_Init();
   MX_XSPI2_Init();
   SystemIsolation_Config();
@@ -222,23 +224,18 @@ int main(void)
 */
 
   uint32_t pitch_nn = 0;
+  Security_Config();
   /*** Camera Init ************************************************************/
-  CameraPipeline_Init((uint32_t *[2]) {&lcd_bg_area.XSize, &lcd_fg_area.XSize}, (uint32_t *[2]) {&lcd_bg_area.YSize, &lcd_fg_area.YSize}, &pitch_nn);
+  CameraPipeline_Init(&lcd_bg_area.XSize, &lcd_bg_area.YSize, &pitch_nn);
 
   /*** Display Init ************************************************************/
-//  LCD_init();
-
-  /* Show random grayscale test image on background layer */
-//  Display_WelcomeScreen();
+  LCD_init();
 
   /* Start LCD Display camera pipe stream */
-  // CameraPipeline_DisplayPipe_Start(lcd_bg_buffer, CMW_MODE_CONTINUOUS);
+   CameraPipeline_DisplayPipe_Start(lcd_bg_buffer, CMW_MODE_CONTINUOUS);
 
   //LCD Test
-  HAL_LTDC_SetAddress(&hltdc, (uint32_t) image, 0);
-
-
-
+//  HAL_LTDC_SetAddress(&hltdc, (uint32_t) dolphin_156x129_565, 0);
 
   /* USER CODE END 2 */
 
@@ -246,12 +243,38 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//	  CameraPipeline_IspUpdate();
+	  CameraPipeline_IspUpdate();
+
+	    if (pitch_nn != (NN_WIDTH * NN_BPP))
+	    {
+	      /* Start NN camera single capture Snapshot */
+	      CameraPipeline_NNPipe_Start(dcmipp_out_nn, CMW_MODE_SNAPSHOT);
+	    }
+	    else
+	    {
+	      /* Start NN camera single capture Snapshot */
+	      CameraPipeline_NNPipe_Start(nn_in, CMW_MODE_SNAPSHOT);
+	    }
+
+	  while (cameraFrameReceived == 0) {};
+	  cameraFrameReceived = 0;
 
 
-//	  while (cameraFrameReceived == 0) {};
-//	  cameraFrameReceived = 0;
+	    uint32_t ts[2] = { 0 };
 
+	    if (pitch_nn != (NN_WIDTH * NN_BPP))
+	    {
+	      SCB_InvalidateDCache_by_Addr(dcmipp_out_nn, sizeof(dcmipp_out_nn));
+	    /*
+	     * Crop the image if the neural network (NN) input dimensions are not a multiple of 16.
+	     * The DCMIPP hardware requires the output image dimensions to be multiples of 16.
+	     * This ensures compatibility with the NN input dimensions.
+	     */
+	      img_crop(dcmipp_out_nn, nn_in, pitch_nn, NN_WIDTH, NN_HEIGHT, NN_BPP);
+	      SCB_CleanInvalidateDCache_by_Addr(nn_in, nn_in_len);
+	    }
+
+	    ts[0] = HAL_GetTick();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -424,6 +447,7 @@ void SystemClock_Config(void)
   HAL_GPIO_ConfigPinAttributes(GPIOG,GPIO_PIN_6,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
   HAL_GPIO_ConfigPinAttributes(GPIOG,GPIO_PIN_8,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
   HAL_GPIO_ConfigPinAttributes(GPIOG,GPIO_PIN_10,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
+  HAL_GPIO_ConfigPinAttributes(GPIOG,GPIO_PIN_13,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
   HAL_GPIO_ConfigPinAttributes(GPIOH,GPIO_PIN_3,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
   HAL_GPIO_ConfigPinAttributes(GPIOH,GPIO_PIN_6,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
   HAL_GPIO_ConfigPinAttributes(GPIOH,GPIO_PIN_9,GPIO_PIN_SEC|GPIO_PIN_NPRIV);
@@ -489,6 +513,27 @@ static void Display_WelcomeScreen(void)
     UTIL_LCDEx_PrintfAt(0, LINE(18), CENTER_MODE, WELCOME_MSG_2);
   }
 }
+
+static void Security_Config(void)
+{
+  __HAL_RCC_RIFSC_CLK_ENABLE();
+  RIMC_MasterConfig_t RIMC_master = {0};
+  RIMC_master.MasterCID = RIF_CID_1;
+  RIMC_master.SecPriv = RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV;
+//  HAL_RIF_RIMC_ConfigMasterAttributes(RIF_MASTER_INDEX_NPU, &RIMC_master);
+  HAL_RIF_RIMC_ConfigMasterAttributes(RIF_MASTER_INDEX_DMA2D, &RIMC_master);
+  HAL_RIF_RIMC_ConfigMasterAttributes(RIF_MASTER_INDEX_DCMIPP, &RIMC_master);
+  HAL_RIF_RIMC_ConfigMasterAttributes(RIF_MASTER_INDEX_LTDC1 , &RIMC_master);
+  HAL_RIF_RIMC_ConfigMasterAttributes(RIF_MASTER_INDEX_LTDC2 , &RIMC_master);
+//  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_NPU , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_DMA2D , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_CSI    , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_DCMIPP , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_LTDC   , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_LTDCL1 , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+  HAL_RIF_RISC_SetSlaveSecureAttributes(RIF_RISC_PERIPH_INDEX_LTDCL2 , RIF_ATTRIBUTE_SEC | RIF_ATTRIBUTE_PRIV);
+}
+
 /* USER CODE END 4 */
 
 /**

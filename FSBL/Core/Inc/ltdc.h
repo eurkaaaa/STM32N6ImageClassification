@@ -52,4 +52,3 @@ HAL_StatusTypeDef MX_LTDC_Init(LTDC_HandleTypeDef *hltdc, uint32_t Width, uint32
 #endif /* __LTDC_H__ */
 
 
-

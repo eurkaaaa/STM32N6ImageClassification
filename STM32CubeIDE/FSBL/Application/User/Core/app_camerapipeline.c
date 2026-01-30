@@ -133,7 +133,7 @@ void CameraPipeline_Init(uint32_t *lcd_bg_width, uint32_t *lcd_bg_height, uint32
   ret = CMW_CAMERA_Init(&cam_conf, NULL);
   assert(ret == CMW_ERROR_NONE);
   DCMIPP_PipeInitDisplay(&cam_conf, lcd_bg_width, lcd_bg_height);
-  DCMIPP_PipeInitNn(pitch_nn);
+//  DCMIPP_PipeInitNn(pitch_nn);
 }
 
 void CameraPipeline_DeInit(void)

@@ -16,6 +16,7 @@ RM := rm -rf
 -include Middlewares/Camera_Middleware/sensors/imx335/subdir.mk
 -include Middlewares/Camera_Middleware/sensors/subdir.mk
 -include Middlewares/Camera_Middleware/ISP_Library/isp/Src/subdir.mk
+-include Middlewares/Camera_Middleware/ISP_Library/isp/Inc/subdir.mk
 -include Middlewares/Camera_Middleware/subdir.mk
 -include Drivers/mx66uw1g45g/subdir.mk
 -include Drivers/aps256xx/subdir.mk

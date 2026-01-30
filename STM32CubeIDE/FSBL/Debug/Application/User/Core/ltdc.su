@@ -2,6 +2,6 @@
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:3639:22:LL_APB5_GRP1_EnableClock	24	static
 ../../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:3683:22:LL_APB5_GRP1_DisableClock	16	static
 D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:30:6:MX_LTDC_Init_CubeMX	120	static
-D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:111:19:MX_LTDC_Init	24	static
-D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:120:6:HAL_LTDC_MspInit	440	static
-D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:237:6:HAL_LTDC_MspDeInit	16	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:110:19:MX_LTDC_Init	24	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:117:7:HAL_LTDC_MspInit	440	static
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/ltdc.c:234:6:HAL_LTDC_MspDeInit	16	static

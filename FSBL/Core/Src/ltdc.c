@@ -107,7 +107,6 @@ void MX_LTDC_Init_CubeMX(void)
   /* USER CODE END LTDC_Init 2 */
 
 }
-
 HAL_StatusTypeDef MX_LTDC_Init(LTDC_HandleTypeDef *hltdc, uint32_t Width, uint32_t Height)
 {
   (void)hltdc;
@@ -115,9 +114,7 @@ HAL_StatusTypeDef MX_LTDC_Init(LTDC_HandleTypeDef *hltdc, uint32_t Width, uint32
   (void)Height;
   MX_LTDC_Init_CubeMX();
   return HAL_OK;
-}
-
-void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
+}void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};

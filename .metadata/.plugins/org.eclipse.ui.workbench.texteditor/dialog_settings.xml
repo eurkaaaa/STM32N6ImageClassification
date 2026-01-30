@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="LCD_LAYER_0_ADDRESS"/>
 		<item value="Init"/>
 		<item value="MX_I2C1_Init"/>
 		<item value="init"/>

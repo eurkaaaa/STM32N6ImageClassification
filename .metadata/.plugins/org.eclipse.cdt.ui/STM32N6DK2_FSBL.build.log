@@ -1,9 +1,25 @@
-21:41:16 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
+21:33:12 **** Incremental Build of configuration Debug for project STM32N6DK2_FSBL ****
 make -j8 all 
+arm-none-eabi-gcc "D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c" -mcpu=cortex-m55 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32N657xx -c -I../../../FSBL/Core/Inc -I../../../Drivers/STM32N6xx_HAL_Driver/Inc -I../../../Drivers/CMSIS/Device/ST/STM32N6xx/Include -I../../../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy -I../../../Middlewares/ST/STM32_ExtMem_Manager -I../../../Middlewares/ST/STM32_ExtMem_Manager/sal -I../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp -I../../../Middlewares/ST/STM32_ExtMem_Manager/psram -I../../../Middlewares/ST/STM32_ExtMem_Manager/sdcard -I../../../Middlewares/ST/STM32_ExtMem_Manager/user -I../../../Drivers/CMSIS/Include -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/Common" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Drivers/STM32N6570-DK" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Utilities/lcd" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/imx335" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd6g" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/sensors/vd55g1" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/evision/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware/ISP_Library/isp/Inc" -I"D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Middlewares/Camera_Middleware" -I"C:/Users/Lenovo/STM32Cube/Repository/STM32Cube_FW_N6_V1.2.0/Drivers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -mcmse -MMD -MP -MF"Application/User/Core/main.d" -MT"Application/User/Core/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Application/User/Core/main.o"
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:472:13: warning: 'Display_WelcomeScreen' defined but not used [-Wunused-function]
+  472 | static void Display_WelcomeScreen(void)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+D:/STM32/STM32CubeIDE/STM32N6DK2/FSBL/Core/Src/main.c:112:12: warning: 'lcd_fg_buffer_rd_idx' defined but not used [-Wunused-variable]
+  112 | static int lcd_fg_buffer_rd_idx;
+      |            ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32N6DK2_FSBL.elf" @"objects.list"  -l:libn6-evision-awb_gcc.a -l:libn6-evision-st-ae_gcc.a -mcpu=cortex-m55 -T"D:\STM32\STM32CubeIDE\STM32N6DK2\STM32CubeIDE\FSBL\STM32N657X0HXQ_AXISRAM2_fsbl.ld" --specs=nosys.specs -Wl,-Map="STM32N6DK2_FSBL.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L"D:\STM32\STM32CubeIDE\STM32N6DK1\Middlewares\Camera_Middleware\ISP_Library\evision\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32N6DK2_FSBL.elf
+ 
 arm-none-eabi-size  STM32N6DK2_FSBL.elf 
+arm-none-eabi-objdump -h -S STM32N6DK2_FSBL.elf  > "STM32N6DK2_FSBL.list"
    text	   data	    bss	    dec	    hex	filename
- 236928	    400	   9928	 247256	  3c5d8	STM32N6DK2_FSBL.elf
+ 203864	    404	2314380	2518648	 266e78	STM32N6DK2_FSBL.elf
+arm-none-eabi-objcopy  -O binary STM32N6DK2_FSBL.elf  "STM32N6DK2_FSBL.bin"
 Finished building: default.size.stdout
+ 
+Finished building: STM32N6DK2_FSBL.bin
+ 
+Finished building: STM32N6DK2_FSBL.list
  
 cd "D:/STM32/STM32CubeIDE/STM32N6DK2/STM32CubeIDE/FSBL/Debug"
 echo y | "E:\STM32CUBEPROGRAMMER\bin\STM32_SigningTool_CLI.exe" -bin "STM32N6DK2_FSBL.bin" -nk -of 0x80000000 -t fsbl -o "STM32N6DK2_FSBL-Trusted.bin" -hv 2.3 -dump "STM32N6DK2_FSBL-Trusted.bin"
@@ -15,7 +31,7 @@ Do you want to replace this file: STM32N6DK2_FSBL-Trusted.bin ? (y/n)
 [Header v2.3] Do not align the payload to the 0x400 offset, No padding bytes at the beginning of the payload.
 Header version 2.3 preparation... 
 Extracting Entry point value from the input file...
-Entry point value : 0x341833f1
+Entry point value : 0x341835b5
 The headred image file generated successfully: STM32N6DK2_FSBL-Trusted.bin
 
 Header description:
@@ -24,42 +40,42 @@ Header description:
     Signature: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
                00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
                00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-    Checksum: 0x1868b16
+    Checksum: 0x13f39c0
     Header version: 0x20300
-    Size: 0x39f20
+    Size: 0x31e00
     Load address: 0xffffffff
-    Entry point: 0x341833f1
+    Entry point: 0x341835b5
     Image version: 0x0
     Extension: 0x80000000
 
 Pad header detected:
     Type: 0x5354ffff
     Size: 0x1a0
-    Padding values: 6c 0f 38 41 48 39 eb 79 32 a4 28 d0 53 07 b5 f8 cf ba ef f7 f5 94 61 d8 92 28 a8 dc bb 5a 15 
+    Padding values: be 3e 99 e2 ed db 4a b9 cd fd 1b 74 27 44 99 c0 3e d2 a7 64 58 bf 3b db 6e a4 63 1a 4e 59 87 
 
-                    e9 4a 93 b7 bf 11 e2 8d 7e 6f 8c 7e ad 49 7c d6 9e 9a e4 e9 de 08 99 35 d1 64 74 69 e6 62 88 
+                    ec 10 4d 0e 77 43 34 87 e9 28 b4 4b 23 54 06 67 d8 71 e3 c6 55 18 51 43 33 a9 1b aa 76 5e 79 
 
-                    f1 7f 43 88 55 d0 a4 0e 79 52 ca 3b 55 66 47 f3 b9 e4 4a db ec c0 86 66 f1 ca 2f 7d 6c 97 37 
+                    0f c0 d4 50 0d 28 bd e3 9b 32 18 14 d9 a3 2d 75 ff 5c 46 1e fa 67 df 94 c8 59 5e 32 4f 54 e9 
 
-                    8a cd 3a ce 0e 06 e8 09 f3 f0 3d a7 17 72 6a d6 85 93 79 21 83 04 13 a0 6a cd 86 12 27 51 21 
+                    b0 e7 23 de 7f d8 48 a0 df 68 41 62 db 16 32 8f 5f 3f 81 d9 c9 99 aa ca 4f 92 a0 a1 b8 eb 79 
 
-                    30 00 2e c9 42 19 7f c1 d7 1c 5d 6e 47 7e 90 ac 7c e0 8f 1f 91 ae f7 5f 2c 34 8a 3d 20 ca f2 
+                    46 54 bb 1c 82 5a 8c 3b 95 63 40 d3 dc fa 7d df df b0 1e 8d fb 18 61 a5 46 d6 25 77 5d 71 a5 
 
-                    d4 f4 a9 d3 19 52 63 27 9b ad 90 d4 ba e9 d4 2e b8 a7 81 59 af 31 ed 16 f8 bf bf 09 98 0a 1e 
+                    9d 0d 6e 89 1f d0 12 e2 14 4e ab 2d f4 12 d9 be 37 0a 4e 99 9c 76 d9 c8 77 aa d1 47 3f b4 a8 
 
-                    e5 56 81 ab 6f 98 88 cb 3f 14 e9 c0 9d 9c 13 60 d1 6d c9 46 30 7c 56 81 1d 5d d7 25 58 84 05 
+                    e2 a1 54 8b a1 54 c4 a3 a2 0f dd cb f9 be 70 83 13 a8 31 f1 b8 01 60 99 26 dd 1f fe ae f8 bf 
 
-                    3d 69 db c6 b6 82 ac f4 d8 6b 7c 13 c1 8a e0 02 70 cc 2a a9 f2 0a fe 0c fa 8d 4d 85 33 de f6 
+                    79 dd 35 e9 83 1b de 4c 25 1f d3 0b 9f ab 38 c2 15 e3 c3 e3 6d 89 4a ae 2f dc b4 56 e8 4f aa 
 
-                    ba 38 92 2a 2b 95 1e 87 f2 de 6e f9 5f b0 1b 81 0c 0e 86 21 af 3d 6e 58 0b a6 49 ac 17 16 9d 
+                    de fb 88 4b 61 de 41 4f 75 cd 12 c6 8d 4c 53 e2 1a 16 9d 7a 76 92 a3 f3 c8 37 92 0d 9b 29 d3 
 
-                    02 8b b3 0e af f8 f2 3f a1 f8 8d fb 31 9f fd a8 e8 ae b1 4f 6b cf 3d 9a e3 33 f9 13 ec 89 b0 
+                    6e a8 cd 3f b3 30 20 14 20 21 cb a6 a7 20 eb 61 65 91 d6 34 8b fc 5f 74 64 44 60 ab e4 8c 0b 
 
-                    0f be 63 c6 82 44 6f 96 7f 8a 1a 30 f7 52 e6 59 dc 1c 34 b4 f2 07 1c 92 75 6e 1a 73 40 1c b5 
+                    76 25 27 d9 36 1d 0d 2d 57 cf dc 69 5c 4f e5 b7 4f cf 58 28 42 70 07 fe b3 88 3f f2 b8 63 f9 
 
-                    95 b6 76 67 c3 bf 66 1f 91 c8 55 0a ea 53 95 e2 7c ed 2a 1d f1 31 05 b4 16 1d 13 80 b7 92 cd 
+                    59 4c 3e ce 1d 4e 4b d1 94 fa 2e 67 fb 10 0d 66 d7 76 26 b9 3a d8 0c b1 ba a5 e4 0c 05 1c e4 
 
-                    58 25 cf 8e 8e 36 f1 c9 
+                    e4 e4 94 22 86 a1 19 ca 
 
 Post header 2.3 information :
     Binary type: 0x10
@@ -69,5 +85,5 @@ Post header 2.3 information :
 
  
 
-21:41:17 Build Finished. 0 errors, 0 warnings. (took 1s.321ms)
+21:33:17 Build Finished. 0 errors, 2 warnings. (took 5s.106ms)
 

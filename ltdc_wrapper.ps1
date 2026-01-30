@@ -18,8 +18,18 @@ if ($content -match [regex]::Escape($oldSig)) {
 }
 
 # 2) Add BSP-compatible wrapper if missing
-if ($content -notmatch "HAL_StatusTypeDef\s+MX_LTDC_Init\(LTDC_HandleTypeDef\s*\*hltdc,\s*uint32_t\s+Width,\s*uint32_t\s+Height\)") {
-  $wrapper = @"
+# Always remove any previously injected BSP wrapper (good or bad) so the script is idempotent.
+# This also repairs the common corruption where the wrapper was injected inside MX_LTDC_Init_CubeMX
+# due to matching the '}' in 'LTDC_LayerCfgTypeDef pLayerCfg = {0};'.
+$wrapperSigPattern = "HAL_StatusTypeDef\s+MX_LTDC_Init\(LTDC_HandleTypeDef\s*\*hltdc,\s*uint32_t\s+Width,\s*uint32_t\s+Height\)"
+$wrapperBodyPattern = "(?ms)\r?\n\s*${wrapperSigPattern}\s*\{[\s\S]*?^\}\s*;?\s*"
+$content = [regex]::Replace($content, $wrapperBodyPattern, "`r`n")
+
+# Repair missing semicolon if a previous run split the line.
+$content = $content -replace "LTDC_LayerCfgTypeDef\s+pLayerCfg\s*=\s*\{0\}\s*(\r?\n)", "LTDC_LayerCfgTypeDef pLayerCfg = {0};$1"
+
+# (Re)Add BSP-compatible wrapper
+$wrapper = @"
 
 HAL_StatusTypeDef MX_LTDC_Init(LTDC_HandleTypeDef *hltdc, uint32_t Width, uint32_t Height)
 {
@@ -31,14 +41,15 @@ HAL_StatusTypeDef MX_LTDC_Init(LTDC_HandleTypeDef *hltdc, uint32_t Width, uint32
 }
 "@
 
-  # insert wrapper immediately after MX_LTDC_Init_CubeMX definition
-  $pattern = "(?s)void\s+MX_LTDC_Init_CubeMX\(void\)\s*\{.*?\}\s*"
-  if ($content -match $pattern) {
-    $content = [regex]::Replace($content, $pattern, { param($m) $m.Value.TrimEnd() + $wrapper }, 1)
-  } else {
-    # fallback: append at end of file
-    $content += $wrapper
-  }
+# Insert wrapper immediately after the *end* of MX_LTDC_Init_CubeMX.
+# Important: match the function's closing brace at the start of a line (^) to avoid
+# stopping at the '}' inside struct initializers like '{0}'.
+$pattern = "(?ms)(void\s+MX_LTDC_Init_CubeMX\(void\)\s*\{[\s\S]*?^\}\s*)"
+if ($content -match $pattern) {
+  $content = [regex]::Replace($content, $pattern, { param($m) $m.Groups[1].Value.TrimEnd() + $wrapper }, 1)
+} else {
+  # fallback: append at end of file
+  $content += $wrapper
 }
 
 Set-Content -Path $ltdcPath -Value $content

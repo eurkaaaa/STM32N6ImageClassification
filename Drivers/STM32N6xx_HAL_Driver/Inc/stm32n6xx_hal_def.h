@@ -37,7 +37,6 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 #if 0
-#if 0
 /**
   * @brief  HAL Status structures definition
   */
@@ -58,9 +57,6 @@ typedef enum
   HAL_LOCKED   = 0x01
 } HAL_LockTypeDef;
 #endif
-
-#endif
-
 
 
 /* Exported macros -----------------------------------------------------------*/
@@ -218,7 +214,4 @@ extern uint32_t __enoncacheable;
 #endif
 
 #endif /* ___STM32N6xx_HAL_DEF */
-
-
-
 
