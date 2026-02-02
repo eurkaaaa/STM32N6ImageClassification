@@ -318,6 +318,7 @@ Discarded input sections
  .group         0x00000000        0xc ./Application/User/Core/extmem_manager.o
  .group         0x00000000        0xc ./Application/User/Core/extmem_manager.o
  .group         0x00000000        0xc ./Application/User/Core/extmem_manager.o
+ .group         0x00000000        0xc ./Application/User/Core/extmem_manager.o
  .text          0x00000000        0x0 ./Application/User/Core/extmem_manager.o
  .data          0x00000000        0x0 ./Application/User/Core/extmem_manager.o
  .bss           0x00000000        0x0 ./Application/User/Core/extmem_manager.o
@@ -408,11 +409,12 @@ Discarded input sections
  .group         0x00000000        0xc ./Application/User/Core/extmemloader_init.o
  .group         0x00000000        0xc ./Application/User/Core/extmemloader_init.o
  .group         0x00000000        0xc ./Application/User/Core/extmemloader_init.o
+ .group         0x00000000        0xc ./Application/User/Core/extmemloader_init.o
  .text          0x00000000        0x0 ./Application/User/Core/extmemloader_init.o
  .data          0x00000000        0x0 ./Application/User/Core/extmemloader_init.o
  .bss           0x00000000        0x0 ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000      0xb62 ./Application/User/Core/extmemloader_init.o
- .debug_macro   0x00000000      0x1d3 ./Application/User/Core/extmemloader_init.o
+ .debug_macro   0x00000000      0x1d5 ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000      0x190 ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000       0x63 ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000       0x2e ./Application/User/Core/extmemloader_init.o
@@ -478,6 +480,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000       0x10 ./Application/User/Core/extmemloader_init.o
  .debug_macro   0x00000000       0x34 ./Application/User/Core/extmemloader_init.o
+ .debug_macro   0x00000000       0x16 ./Application/User/Core/extmemloader_init.o
  .group         0x00000000        0xc ./Application/User/Core/gpio.o
  .group         0x00000000        0xc ./Application/User/Core/gpio.o
  .group         0x00000000        0xc ./Application/User/Core/gpio.o
@@ -536,7 +539,7 @@ Discarded input sections
  .data          0x00000000        0x0 ./Application/User/Core/gpio.o
  .bss           0x00000000        0x0 ./Application/User/Core/gpio.o
  .debug_macro   0x00000000      0xb62 ./Application/User/Core/gpio.o
- .debug_macro   0x00000000      0x1d3 ./Application/User/Core/gpio.o
+ .debug_macro   0x00000000      0x1d5 ./Application/User/Core/gpio.o
  .debug_macro   0x00000000      0x190 ./Application/User/Core/gpio.o
  .debug_macro   0x00000000       0x63 ./Application/User/Core/gpio.o
  .debug_macro   0x00000000       0x2e ./Application/User/Core/gpio.o
@@ -647,7 +650,7 @@ Discarded input sections
  .data          0x00000000        0x0 ./Application/User/Core/stm32n6xx_hal_msp.o
  .bss           0x00000000        0x0 ./Application/User/Core/stm32n6xx_hal_msp.o
  .debug_macro   0x00000000      0xb62 ./Application/User/Core/stm32n6xx_hal_msp.o
- .debug_macro   0x00000000      0x1d3 ./Application/User/Core/stm32n6xx_hal_msp.o
+ .debug_macro   0x00000000      0x1d5 ./Application/User/Core/stm32n6xx_hal_msp.o
  .debug_macro   0x00000000      0x190 ./Application/User/Core/stm32n6xx_hal_msp.o
  .debug_macro   0x00000000       0x63 ./Application/User/Core/stm32n6xx_hal_msp.o
  .debug_macro   0x00000000       0x2e ./Application/User/Core/stm32n6xx_hal_msp.o
@@ -762,7 +765,7 @@ Discarded input sections
  .text.HAL_XSPI_MspDeInit
                 0x00000000       0x9c ./Application/User/Core/xspi.o
  .debug_macro   0x00000000      0xb62 ./Application/User/Core/xspi.o
- .debug_macro   0x00000000      0x1d3 ./Application/User/Core/xspi.o
+ .debug_macro   0x00000000      0x1d5 ./Application/User/Core/xspi.o
  .debug_macro   0x00000000      0x190 ./Application/User/Core/xspi.o
  .debug_macro   0x00000000       0x63 ./Application/User/Core/xspi.o
  .debug_macro   0x00000000       0x2e ./Application/User/Core/xspi.o
@@ -873,7 +876,7 @@ Discarded input sections
  .data          0x00000000        0x0 ./Application/User/Core/xspim.o
  .bss           0x00000000        0x0 ./Application/User/Core/xspim.o
  .debug_macro   0x00000000      0xb62 ./Application/User/Core/xspim.o
- .debug_macro   0x00000000      0x1d3 ./Application/User/Core/xspim.o
+ .debug_macro   0x00000000      0x1d5 ./Application/User/Core/xspim.o
  .debug_macro   0x00000000      0x190 ./Application/User/Core/xspim.o
  .debug_macro   0x00000000       0x63 ./Application/User/Core/xspim.o
  .debug_macro   0x00000000       0x2e ./Application/User/Core/xspim.o
@@ -1002,7 +1005,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
  .debug_macro   0x00000000    0x3e96c ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
  .debug_macro   0x00000000       0x6c ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
  .debug_macro   0x00000000      0x190 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
  .debug_macro   0x00000000       0x63 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
  .debug_macro   0x00000000     0x346a ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
@@ -1325,7 +1328,7 @@ Discarded input sections
  .text.HAL_SYSCFG_GetAddressWritePostingBuffer
                 0x00000000       0x18 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
@@ -1518,7 +1521,7 @@ Discarded input sections
  .text.MPU_ConfigMemoryAttributes
                 0x00000000       0x66 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
@@ -1667,7 +1670,7 @@ Discarded input sections
  .text.DMA_Init
                 0x00000000      0x948 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
@@ -1884,7 +1887,7 @@ Discarded input sections
                 0x00000000      0x155 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
  .debug_macro   0x00000000      0x27a ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o
@@ -2034,7 +2037,7 @@ Discarded input sections
                 0x00000000       0x61 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
  .debug_macro   0x00000000      0x291 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_exti.o
@@ -2185,7 +2188,7 @@ Discarded input sections
  .text.HAL_GPIO_GetConfigPinAttributes
                 0x00000000       0x6e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
@@ -2355,7 +2358,7 @@ Discarded input sections
                 0x00000000       0xab ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
  .debug_macro   0x00000000      0x29c ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr.o
@@ -2606,7 +2609,7 @@ Discarded input sections
  .text.HAL_PWREx_ADCVM_Falling_Callback
                 0x00000000        0xe ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
@@ -2783,7 +2786,7 @@ Discarded input sections
  .text.RCC_ATTR_ConfigItemGroup
                 0x00000000      0x124 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
@@ -2934,7 +2937,7 @@ Discarded input sections
  .text.HAL_RCCEx_PLLSSCGConfig
                 0x00000000      0x1b8 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
@@ -3117,7 +3120,7 @@ Discarded input sections
  .text.XSPI_DMAAbortCplt
                 0x00000000       0x78 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
  .debug_macro   0x00000000      0xb62 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
- .debug_macro   0x00000000      0x1d3 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
+ .debug_macro   0x00000000      0x1d5 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
  .debug_macro   0x00000000      0x190 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
  .debug_macro   0x00000000       0x63 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
  .debug_macro   0x00000000       0x2e ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
@@ -3261,13 +3264,14 @@ Discarded input sections
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .text          0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .data          0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .bss           0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .text.memory_init
                 0x00000000       0x10 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
@@ -3326,6 +3330,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
@@ -3392,7 +3398,7 @@ Discarded input sections
  .data          0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .bss           0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
@@ -3451,7 +3457,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
  .debug_macro   0x00000000       0x46 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
@@ -3530,7 +3538,7 @@ Discarded input sections
  .text.CheckSum
                 0x00000000      0x1ee ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
@@ -3589,6 +3597,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x46 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x4c ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
  .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
@@ -3660,11 +3669,12 @@ Discarded input sections
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .text          0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .data          0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .bss           0x00000000        0x0 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/systick_management.o
@@ -3723,7 +3733,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
  .debug_macro   0x00000000       0x46 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
@@ -3804,7 +3816,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
@@ -3855,6 +3867,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
@@ -3927,7 +3941,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
@@ -3978,6 +3992,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
@@ -4044,7 +4060,7 @@ Discarded input sections
  .debug_abbrev  0x00000000       0x28 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_aranges
                 0x00000000       0x18 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
- .debug_macro   0x00000000      0x2bc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
+ .debug_macro   0x00000000      0x2c1 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x8e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
@@ -4053,7 +4069,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
@@ -4104,11 +4120,13 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .debug_line    0x00000000      0xa03 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
- .debug_str     0x00000000   0x1feb2a ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
+ .debug_str     0x00000000   0x1feb88 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .comment       0x00000000       0x44 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
  .ARM.attributes
                 0x00000000       0x3e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
@@ -4179,7 +4197,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
@@ -4230,6 +4248,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
@@ -4296,7 +4316,7 @@ Discarded input sections
  .debug_abbrev  0x00000000       0x28 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_aranges
                 0x00000000       0x18 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
- .debug_macro   0x00000000      0x2bc ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
+ .debug_macro   0x00000000      0x2c1 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x8e ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
@@ -4305,7 +4325,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
@@ -4356,11 +4376,13 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .debug_line    0x00000000      0xa0d ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
- .debug_str     0x00000000   0x1feb34 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
+ .debug_str     0x00000000   0x1feb92 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .comment       0x00000000       0x44 ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
  .ARM.attributes
                 0x00000000       0x3e ./Middlewares/STM32_ExtMem_Manager/stm32_sdcard_driver.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
@@ -4429,7 +4451,7 @@ Discarded input sections
  .bss           0x00000000        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
@@ -4488,8 +4510,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x3c ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_macro   0x00000000       0x20 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
@@ -4568,7 +4592,7 @@ Discarded input sections
                 0x00000000       0x72 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
@@ -4627,8 +4651,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x3c ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
  .debug_macro   0x00000000       0x20 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
+ .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .group         0x00000000        0xc ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
@@ -4695,7 +4721,7 @@ Discarded input sections
  .debug_abbrev  0x00000000       0x28 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_aranges
                 0x00000000       0x18 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
- .debug_macro   0x00000000      0x2bc ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
+ .debug_macro   0x00000000      0x2c1 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000      0xb62 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x22 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x8e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
@@ -4704,7 +4730,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000      0x1df ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
- .debug_macro   0x00000000      0x1d3 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
+ .debug_macro   0x00000000      0x1d5 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000      0x190 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x63 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
@@ -4755,8 +4781,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x2e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x10 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_macro   0x00000000       0x34 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
+ .debug_macro   0x00000000       0x16 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .debug_line    0x00000000      0xa09 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
- .debug_str     0x00000000   0x1feb30 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
+ .debug_str     0x00000000   0x1feb8e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .comment       0x00000000       0x44 ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
  .ARM.attributes
                 0x00000000       0x3e ./Middlewares/STM32_ExtMem_Manager/stm32_user_driver.o
@@ -6301,79 +6328,80 @@ LOAD linker stubs
  .debug_rnglists
                 0x00001276       0x5b ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
 
-.debug_macro    0x00000000    0x51e05
- .debug_macro   0x00000000      0x2ef ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000002ef       0x2e ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0000031d      0x1d3 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000004f0       0x63 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00000553       0x2e ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00000581       0x6c ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000005ed       0x8e ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0000067b       0x51 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000006cc       0x1c ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000006e8       0x28 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00000710      0x110 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00000820     0x2dc3 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000035e3       0x64 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00003647      0x346 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0000398d       0x97 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00003a24       0x22 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00003a46    0x3e96c ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000423b2       0x6c ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004241e     0x346a ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00045888       0x61 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x000458e9      0x19b ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00045a84       0x72 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00045af6      0x47a ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00045f70     0x10fe ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004706e     0x27e2 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x00049850      0xfcd ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004a81d      0x1af ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004a9cc      0x2c9 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004ac95      0x2c4 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004af59      0xa36 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004b98f      0x7b2 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004c141       0xeb ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004c22c      0x216 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004c442      0x36b ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004c7ad      0x303 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004cab0      0x46a ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004cf1a      0x72d ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004d647      0x5e6 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dc2d       0x10 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dc3d       0x22 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dc5f       0x2e ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dc8d       0x10 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dc9d       0x34 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dcd1       0x16 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dce7       0x20 ./Application/User/Core/extmem_manager.o
- .debug_macro   0x0004dd07      0x34f ./Application/User/Core/extmemloader_init.o
- .debug_macro   0x0004e056       0x1c ./Application/User/Core/extmemloader_init.o
- .debug_macro   0x0004e072      0x28d ./Application/User/Core/gpio.o
- .debug_macro   0x0004e2ff      0x283 ./Application/User/Core/stm32n6xx_hal_msp.o
- .debug_macro   0x0004e582      0x28d ./Application/User/Core/xspi.o
- .debug_macro   0x0004e80f      0x28d ./Application/User/Core/xspim.o
- .debug_macro   0x0004ea9c      0x28c ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
- .debug_macro   0x0004ed28      0x27f ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
- .debug_macro   0x0004efa7      0x27a ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
- .debug_macro   0x0004f221      0x27a ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
- .debug_macro   0x0004f49b      0x280 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
- .debug_macro   0x0004f71b      0x2c7 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
- .debug_macro   0x0004f9e2      0x2fd ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
- .debug_macro   0x0004fcdf      0x279 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
- .debug_macro   0x0004ff58      0x2c0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
- .debug_macro   0x00050218      0x2dc ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
- .debug_macro   0x000504f4       0x46 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
- .debug_macro   0x0005053a      0x2dd ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
- .debug_macro   0x00050817       0x4c ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
- .debug_macro   0x00050863      0x35a ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
- .debug_macro   0x00050bbd       0x10 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
- .debug_macro   0x00050bcd      0x2ce ./Middlewares/STM32_ExtMem_Loader/systick_management.o
- .debug_macro   0x00050e9b      0x2ec ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
- .debug_macro   0x00051187      0x2dc ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
- .debug_macro   0x00051463      0x2fa ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
- .debug_macro   0x0005175d      0x371 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
- .debug_macro   0x00051ace      0x337 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
+.debug_macro    0x00000000    0x51e54
+ .debug_macro   0x00000000      0x2f4 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000002f4       0x2e ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00000322      0x1d5 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000004f7       0x63 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0000055a       0x2e ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00000588       0x6c ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000005f4       0x8e ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00000682       0x51 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000006d3       0x1c ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000006ef       0x28 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00000717      0x110 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00000827     0x2dc3 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000035ea       0x64 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0000364e      0x346 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00003994       0x97 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00003a2b       0x22 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00003a4d    0x3e96c ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000423b9       0x6c ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00042425     0x346a ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004588f       0x61 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x000458f0      0x19b ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00045a8b       0x72 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00045afd      0x47a ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00045f77     0x10fe ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00047075     0x27e2 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x00049857      0xfcd ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004a824      0x1af ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004a9d3      0x2c9 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004ac9c      0x2c4 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004af60      0xa36 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004b996      0x7b2 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004c148       0xeb ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004c233      0x216 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004c449      0x36b ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004c7b4      0x303 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004cab7      0x46a ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004cf21      0x72d ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004d64e      0x5e6 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dc34       0x10 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dc44       0x22 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dc66       0x2e ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dc94       0x10 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dca4       0x34 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dcd8       0x16 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dcee       0x16 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dd04       0x20 ./Application/User/Core/extmem_manager.o
+ .debug_macro   0x0004dd24      0x354 ./Application/User/Core/extmemloader_init.o
+ .debug_macro   0x0004e078       0x1c ./Application/User/Core/extmemloader_init.o
+ .debug_macro   0x0004e094      0x28d ./Application/User/Core/gpio.o
+ .debug_macro   0x0004e321      0x283 ./Application/User/Core/stm32n6xx_hal_msp.o
+ .debug_macro   0x0004e5a4      0x28d ./Application/User/Core/xspi.o
+ .debug_macro   0x0004e831      0x28d ./Application/User/Core/xspim.o
+ .debug_macro   0x0004eabe      0x28c ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
+ .debug_macro   0x0004ed4a      0x27f ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
+ .debug_macro   0x0004efc9      0x27a ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
+ .debug_macro   0x0004f243      0x27a ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
+ .debug_macro   0x0004f4bd      0x280 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
+ .debug_macro   0x0004f73d      0x2c7 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
+ .debug_macro   0x0004fa04      0x2fd ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
+ .debug_macro   0x0004fd01      0x279 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
+ .debug_macro   0x0004ff7a      0x2c0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
+ .debug_macro   0x0005023a      0x2e1 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .debug_macro   0x0005051b       0x46 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+ .debug_macro   0x00050561      0x2e2 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+ .debug_macro   0x00050843       0x4c ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+ .debug_macro   0x0005088f      0x35f ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
+ .debug_macro   0x00050bee       0x10 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
+ .debug_macro   0x00050bfe      0x2d3 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+ .debug_macro   0x00050ed1      0x2f1 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
+ .debug_macro   0x000511c2      0x2e1 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
+ .debug_macro   0x000514a3      0x2ff ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
+ .debug_macro   0x000517a2      0x376 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
+ .debug_macro   0x00051b18      0x33c ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
 
 .debug_line     0x00000000    0x1b0e9
  .debug_line    0x00000000      0xa63 ./Application/User/Core/extmem_manager.o
@@ -6401,55 +6429,55 @@ LOAD linker stubs
  .debug_line    0x00018819     0x1938 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
  .debug_line    0x0001a151      0xf98 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
 
-.debug_str      0x00000000   0x20b072
- .debug_str     0x00000000   0x20b072 ./Application/User/Core/extmem_manager.o
-                             0x1ffa75 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Application/User/Core/extmemloader_init.o
-                             0x1ff6d9 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Application/User/Core/gpio.o
+.debug_str      0x00000000   0x20b0d0
+ .debug_str     0x00000000   0x20b0d0 ./Application/User/Core/extmem_manager.o
+                             0x1ffad3 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Application/User/Core/extmemloader_init.o
+                             0x1ff737 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Application/User/Core/gpio.o
                              0x1ff171 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Application/User/Core/stm32n6xx_hal_msp.o
+ .debug_str     0x0020b0d0        0x0 ./Application/User/Core/stm32n6xx_hal_msp.o
                              0x1fe722 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Application/User/Core/xspi.o
+ .debug_str     0x0020b0d0        0x0 ./Application/User/Core/xspi.o
                              0x1ffdf3 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Application/User/Core/xspim.o
+ .debug_str     0x0020b0d0        0x0 ./Application/User/Core/xspim.o
                              0x1fe69a (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/CMSIS/system_stm32n6xx_fsbl.o
                              0x1ff53f (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o
                              0x200dbc (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o
                              0x1ff8e9 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o
                              0x1feeb3 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_gpio.o
                              0x1feb45 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_pwr_ex.o
                              0x1ff37f (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc.o
                              0x20004f (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_rcc_ex.o
                              0x201044 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
+ .debug_str     0x0020b0d0        0x0 ./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_xspi.o
                              0x200179 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
-                             0x1fef8f (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
-                             0x1fee9d (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
-                             0x1ff7da (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
-                             0x1fee48 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
-                             0x20020d (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
-                             0x1ff98a (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
-                             0x1ff9a8 (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
-                             0x2027fb (size before relaxing)
- .debug_str     0x0020b072        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
-                             0x20029e (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Loader/memory_wrapper.o
+                             0x1fefed (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_device_info.o
+                             0x1feefb (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Loader/stm32_loader_api.o
+                             0x1ff838 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Loader/systick_management.o
+                             0x1feea6 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o
+                             0x20026b (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o
+                             0x1ff9e8 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sal_xspi.o
+                             0x1ffa06 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_data.o
+                             0x202859 (size before relaxing)
+ .debug_str     0x0020b0d0        0x0 ./Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o
+                             0x2002fc (size before relaxing)
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Application/User/Core/extmem_manager.o

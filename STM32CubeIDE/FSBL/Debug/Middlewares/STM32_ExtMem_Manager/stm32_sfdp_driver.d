@@ -42,6 +42,7 @@ Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o: \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h \
+ ../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_xip.h \
  D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h \
  D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_api.h \
  D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_data.h \
@@ -88,6 +89,7 @@ Middlewares/STM32_ExtMem_Manager/stm32_sfdp_driver.o: \
 ../../../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h:
+../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_xip.h:
 D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h:
 D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_api.h:
 D:/STM32/STM32CubeIDE/STM32N6DK2/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_data.h:

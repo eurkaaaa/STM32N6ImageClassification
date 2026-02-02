@@ -92,8 +92,8 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CACHEAXI_Init();
-  MX_DCMIPP_Init();
-  MX_I2C1_Init();
+//  MX_DCMIPP_Init();
+//  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -102,6 +102,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+	  HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -1,39 +1,15 @@
-2026-01-30 16:41:33,625 [INFO] Activator:176 - 
+2026-02-02 00:40:04,414 [INFO] Activator:176 - 
 
 
-2026-01-30 16:41:33,634 [INFO] Activator:177 - !SESSION log4j initialized
-2026-01-30 16:41:40,381 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
-2026-01-30 16:41:40,848 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:41:40,850 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:41:40,852 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,026 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,027 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,038 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,865 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,877 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:18,878 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,352 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,364 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,365 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,507 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,519 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:42:49,531 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,369 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,370 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,371 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,508 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,520 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:46:03,521 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:03,716 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:03,717 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:03,718 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:04,048 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:04,049 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:57:04,051 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,121 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,122 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,123 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,300 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,301 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 16:58:53,303 [ERROR] ConfigurationRetriever:142 - IOException on connection: Connection refused: getsockopt
-2026-01-30 20:57:19,663 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
+2026-02-02 00:40:04,422 [INFO] Activator:177 - !SESSION log4j initialized
+2026-02-02 00:40:11,609 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-02-02 01:10:01,101 [INFO] Activator:176 - 
+
+
+2026-02-02 01:10:01,104 [INFO] Activator:177 - !SESSION log4j initialized
+2026-02-02 01:10:07,459 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-02-02 10:56:30,446 [INFO] Activator:176 - 
+
+
+2026-02-02 10:56:30,450 [INFO] Activator:177 - !SESSION log4j initialized
+2026-02-02 10:56:37,613 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

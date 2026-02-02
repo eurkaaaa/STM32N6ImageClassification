@@ -47,6 +47,7 @@
 #include "stm32n6xx_hal.h"
 #include "stm32_extmem.h"
 #include "stm32_extmem_type.h"
+#include "boot/stm32_boot_xip.h"
 
 /* USER CODE BEGIN INCLUDE */
 
@@ -67,6 +68,13 @@ enum {
   EXTMEMORY_1  = 0, /*!< ID=0 for the first external memory  */
   EXTMEMORY_2  = 1, /*!< ID=1 for the second external memory */
 };
+
+/*
+  @brief management of the boot layer
+*/
+#define EXTMEM_MEMORY_BOOTXIP  EXTMEMORY_1
+#define EXTMEM_XIP_IMAGE_OFFSET 0x100000
+#define EXTMEM_HEADER_OFFSET 0x400
 
 /* USER CODE BEGIN EC */
 

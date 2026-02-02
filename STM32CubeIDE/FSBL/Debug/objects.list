@@ -59,6 +59,7 @@
 "./Middlewares/Camera_Middleware/sensors/vd55g1/vd55g1_patch_cut_1.o"
 "./Middlewares/Camera_Middleware/sensors/vd55g1/vd55g1_patch_cut_2.o"
 "./Middlewares/Camera_Middleware/sensors/vd6g/vd6g.o"
+"./Middlewares/STM32_ExtMem_Manager/stm32_boot_xip.o"
 "./Middlewares/STM32_ExtMem_Manager/stm32_extmem.o"
 "./Middlewares/STM32_ExtMem_Manager/stm32_psram_driver.o"
 "./Middlewares/STM32_ExtMem_Manager/stm32_sal_sd.o"

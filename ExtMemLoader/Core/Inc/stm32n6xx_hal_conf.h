@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+﻿/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file    stm32n6xx_hal_conf.h
@@ -27,6 +27,23 @@ extern "C" {
 #endif
 
 /* Exported types ------------------------------------------------------------*/
+typedef enum
+{
+  HAL_OK       = 0x00,
+  HAL_ERROR    = 0x01,
+  HAL_BUSY     = 0x02,
+  HAL_TIMEOUT  = 0x03
+} HAL_StatusTypeDef;
+
+/**
+  * @brief  HAL Lock structures definition
+  */
+typedef enum
+{
+  HAL_UNLOCKED = 0x00,
+  HAL_LOCKED   = 0x01
+} HAL_LockTypeDef;
+
 /* Exported constants --------------------------------------------------------*/
 
 /* ########################## Module Selection ############################## */
@@ -502,3 +519,4 @@ void assert_failed(uint8_t *file, uint32_t line);
 #endif
 
 #endif /* STM32N6xx_HAL_CONF_H */
+

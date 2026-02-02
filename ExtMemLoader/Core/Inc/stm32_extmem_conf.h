@@ -67,6 +67,13 @@ enum {
   EXTMEMORY_2  = 1, /*!< ID=1 for the second external memory */
 };
 
+/*
+  @brief management of the boot layer
+*/
+#define EXTMEM_MEMORY_BOOTXIP  EXTMEMORY_1
+#define EXTMEM_XIP_IMAGE_OFFSET 0x100000
+#define EXTMEM_HEADER_OFFSET 0x400
+
 /* USER CODE BEGIN EC */
 
 /* USER CODE END EC */

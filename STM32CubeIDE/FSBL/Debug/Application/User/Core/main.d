@@ -46,6 +46,7 @@ Application/User/Core/main.o: \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h \
  ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h \
+ ../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_xip.h \
  ../../../FSBL/Core/Inc/i2c.h ../../../FSBL/Core/Inc/ltdc.h \
  ../../../FSBL/Core/Inc/xspi.h ../../../FSBL/Core/Inc/xspim.h \
  ../../../FSBL/Core/Inc/gpio.h \
@@ -153,6 +154,7 @@ Application/User/Core/main.o: \
 ../../../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver_type.h:
 ../../../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver_type.h:
+../../../Middlewares/ST/STM32_ExtMem_Manager/boot/stm32_boot_xip.h:
 ../../../FSBL/Core/Inc/i2c.h:
 ../../../FSBL/Core/Inc/ltdc.h:
 ../../../FSBL/Core/Inc/xspi.h:
