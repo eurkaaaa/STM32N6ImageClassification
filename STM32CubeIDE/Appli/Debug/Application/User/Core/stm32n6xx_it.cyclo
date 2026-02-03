@@ -1,0 +1,14 @@
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:73:6:NMI_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:88:6:HardFault_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:103:6:MemManage_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:118:6:BusFault_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:133:6:UsageFault_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:148:6:SecureFault_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:162:6:SVC_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:175:6:DebugMon_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:188:6:PendSV_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:201:6:SysTick_Handler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:222:6:DCMIPP_IRQHandler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:237:6:LTDC_UP_IRQHandler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:252:6:LTDC_UP_ERR_IRQHandler	1
+D:/STM32/STM32CubeIDE/STM32N6DK3/Appli/Core/Src/stm32n6xx_it.c:267:6:CSI_IRQHandler	1

@@ -1,0 +1,15 @@
+12:01:19 **** Incremental Build of configuration Debug for project STM32N6DK3_ExtMemLoader ****
+make -j8 all 
+arm-none-eabi-size  STM32N6DK3_ExtMemLoader.elf 
+   text	   data	    bss	    dec	    hex	filename
+  62204	    520	   3380	  66104	  10238	STM32N6DK3_ExtMemLoader.elf
+Finished building: default.size.stdout
+ 
+bash "../postbuild.sh" "D:\STM32\STM32CubeIDE_2.0.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.300.202508131133\tools\bin/ExternalLoader"
+STM32CUBE IDE is found!
+File copied successfully under STM32CubeProgrammer.
+File copied successfully under STM32CubeIDE
+ 
+
+12:01:20 Build Finished. 0 errors, 0 warnings. (took 954ms)
+
